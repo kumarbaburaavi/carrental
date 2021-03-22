@@ -79,6 +79,7 @@ target/
     `-- com
 ```
 API Reference for Developer : http://localhost:8080/swagger-ui.html
+Design Ref: https://github.com/kumarbaburaavi/carrental/blob/main/Design.png
 
 ## Usage
 
