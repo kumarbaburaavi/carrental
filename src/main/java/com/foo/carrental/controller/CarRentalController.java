@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -84,5 +85,10 @@ public class CarRentalController {
     @GetMapping("car-availability/{from}/{to}")
     public List<CarAvailability> findCarAvailability(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate from, @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate to) {
         return availService.findCarsBetween(from, to);
+    }
+    
+    @PutMapping("finish-rental/{customerId}/{km}/{hours}/{returnDate}")
+    public ResponseEntity<Rental> finishRental(@PathVariable Integer customerId, @PathVariable Integer km, @PathVariable Float hours, @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate returnDate) {
+        return ResponseEntity.created(URI.create("")).body(rentalService.finish(customerId, km, hours, returnDate));
     }
 }
