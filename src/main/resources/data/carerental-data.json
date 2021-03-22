@@ -1,0 +1,50 @@
+ [
+	{
+		"rentalDate": "2021-04-24",
+		"returnDate": "2021-04-25",
+		"km": 100,
+		"hours": 2.3,
+		"customer": {
+			"customerNumber": 1001
+		},
+		"car": {
+			"registrationNr": "ABC 122"
+		}
+	},
+	{
+		"rentalDate": "2021-04-20",
+		"returnDate": "2021-04-21",
+		"km": 100,
+		"hours": 2.3,
+		"customer": {
+			"customerNumber": 1002
+		},
+		"car": {
+			"registrationNr": "ABC 121"
+		}
+	},
+	{
+		"rentalDate": "2021-04-21",
+		"returnDate": "2021-04-22",
+		"km": 100,
+		"hours": 2.3,
+		"customer": {
+			"customerNumber": 1003
+		},
+		"car": {
+			"registrationNr": "ABC 123"
+		}
+	},
+	{
+		"rentalDate": "2021-04-23",
+		"returnDate": "2021-04-24",
+		"km": 100,
+		"hours": 2.3,
+		"customer": {
+			"customerNumber": 1004
+		},
+		"car": {
+			"registrationNr": "ABC 124"
+		}
+	}
+]

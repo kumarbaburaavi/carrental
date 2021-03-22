@@ -1,0 +1,34 @@
+ [
+	{
+		"rentalDate": "2021-04-24",
+		"returnDate": "2021-04-25",
+		"hourlyrate": 200,
+		"car": {
+			"registrationNr": "ABC 122"
+		}
+	},
+	{
+		"rentalDate": "2021-04-20",
+		"returnDate": "2021-04-21",
+		"hourlyrate": 300,
+		"car": {
+			"registrationNr": "ABC 121"
+		}
+	},
+	{
+		"rentalDate": "2021-04-21",
+		"returnDate": "2021-04-22",
+		"hourlyrate": 250,
+		"car": {
+			"registrationNr": "ABC 123"
+		}
+	},
+	{
+		"rentalDate": "2021-04-23",
+		"returnDate": "2021-04-24",
+		"hourlyrate": 260,
+		"car": {
+			"registrationNr": "ABC 124"
+		}
+	}
+]

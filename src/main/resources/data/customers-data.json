@@ -1,0 +1,27 @@
+[
+		{
+			"customerNumber": 1001,
+			"lastName": "John",
+			"firstName": "Smith"
+		},
+		{
+			"customerNumber": 1002,
+			"lastName": "Steve",
+			"firstName": " Leo"
+		},
+		{
+			"customerNumber": 1003,
+			"lastName": "John",
+			"firstName": "Roger"
+		},
+		{
+			"customerNumber": 1004,
+			"lastName": "Nels",
+			"firstName": "Stack"
+		},
+		{
+			"customerNumber": 1005,
+			"lastName": "Robert",
+			"firstName": "stig"
+		}
+]

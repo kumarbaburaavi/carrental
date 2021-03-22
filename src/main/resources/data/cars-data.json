@@ -1,0 +1,38 @@
+ [
+	{
+		"registrationNr": "ABC 121",
+		"model": "BMW T5",
+		"constructionYear": 1980,
+		"mileage": 20
+	},
+	{
+		"registrationNr": "ABC 122",
+		"model": "BMW T6",
+		"constructionYear": 1990,
+		"mileage": 23
+	},
+	{
+		"registrationNr": "ABC 123",
+		"model": "BMW T7",
+		"constructionYear": 2000,
+		"mileage": 25
+	},
+	{
+		"registrationNr": "ABC 124",
+		"model": "Audi A7",
+		"constructionYear": 1990,
+		"mileage": 10
+	},
+	{
+		"registrationNr": "ABC 125",
+		"model": "Tesla T8",
+		"constructionYear": 2000,
+		"mileage": 20
+	},
+	{
+		"registrationNr": "ABC 126",
+		"model": "Tesla T9",
+		"constructionYear": 2010,
+		"mileage": 23
+	}
+]
