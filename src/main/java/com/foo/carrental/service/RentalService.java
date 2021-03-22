@@ -1,5 +1,6 @@
 package com.foo.carrental.service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -64,10 +65,16 @@ public class RentalService {
      * @param rental           the rental to be updated
      * @return 
      */
-    public Rental finish(Rental rental) {
-        rental.setKm(rental.getKm());
+    public Rental finish(Integer customerId, Integer km, Float hours, LocalDate returnDate) {
+    	List<Rental> findRunningRentals = rentalRepository.findRunningRentals(customerId);
+		if (findRunningRentals.isEmpty()) {
+			throw new EntityNotFoundException(messages.get("rentalNotFound"));
+		}
+		
+		Rental rental=findRunningRentals.get(0);
+        rental.setKm(km);
         rental.getCar().setMileage(rental.getCar().getMileage() + rental.getKm());
-        rental.setReturnDate(rental.getRentalDate());
+        rental.setReturnDate(returnDate);
         return rentalRepository.save(rental);
     }
 

@@ -49,12 +49,12 @@ Many fields of form backing beans and entity classes contain validation steps do
 # Install
 #### Download the repository
 ```
-$ git clone https://github.com/kumarbaburaavi/tutorial.git
+$ https://github.com/kumarbaburaavi/carrental.git
 ```
 #### Run CarRental ReST service with maven build tool 
 Application run with DEV profile which is default and it connects with H2 in-memory database.
 ```
-$ cd urlshortener
+$ cd carrental
 $ mvn clean test                         # Run the testcases and code coverage
 $ mvn clean package -DskipTests=true    # Compile and Build the package
 $ mvn spring-boot:run                    # Run the spring boot application.
@@ -79,3 +79,18 @@ target/
     `-- com
 ```
 API Reference for Developer : http://localhost:8080/swagger-ui.html
+
+## Usage
+
+Request Method | URI | Body (JSON) | Description |  
+:---: | :--- | :---: | :--- |
+POST | http://localhost:8080/car-rental/api/v1/create-car | { "car": "[http...]" }| Create a car | 
+POST | http://localhost:8080/car-rental/api/v1/create-customer | { "customer": "[http...]" }| Create a customer  | 
+POST | http://localhost:8080/car-rental/api/v1/book-rental | { "Book": "[http...]" } | Book car rental |
+POST | http://localhost:8080/car-rental/api/v1/register-car-availability | { "Free Pool": "[http...]" } | Register cars in availability pool | 
+GET | http://localhost:8080/car-rental/api/v1/car-availability/{from}/{to} | - | Find cars availability between the dates | 
+GET | http://localhost:8080/car-rental/api/v1/mileage-greater-than/{mileage} | - | Find and return cars above given mileage| 
+GET | http://localhost:8080//car-rental/api/v1/running-rentals | - | Find and return cars which are in rental| 
+PUT | http://localhost:8080/car-rental/api/v1/finish-rental/{customerId}/{km}/{hours}/{returnDate} |  { "rental": "[http...]" } | Finish the rental | 
+DELETE | http://localhost:8080/car-rental/api/v1/delete-car/{registrationNr} | - | Remove car | 
+DELETE | http://localhost:8080/car-rental/api/v1/delete-customer/{customerId} | - | Remove customer | 
